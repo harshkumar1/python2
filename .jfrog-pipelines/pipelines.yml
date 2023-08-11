@@ -2,7 +2,6 @@ resources:
   - name: script
     type: GitRepo
     configuration:
-      // path: jfrog/sample-script
       path: RjSH1/python2
       gitProvider: myGithub
 pipelines:
