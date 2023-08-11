@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: harshkumar1/pyhton2
-      gitProvider: hk_github
+      gitProvider: hk_github_sample
 pipelines:
   - name: pyhton_sample
     steps:
