@@ -19,6 +19,7 @@ pipelines:
             - python3 -V
             - cd $res_src_repo_resourcePath
             - ls
+            - pip --version
             - pip install pylint
             - pylint -version
             - pylint .
