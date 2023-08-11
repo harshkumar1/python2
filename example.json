@@ -1,9 +1,0 @@
-{ 
-
-   "TEST": "example",
-   "SAMPLE": "master",
-   "STEP_URL" : "https://rcapp.shippable.com/Varsha-Arun/sample-python/45",
-   "LANG": "python",
-   "res_utility_repo_isPrerelease": true,
-   "HOME": "varsha/test"
-}
