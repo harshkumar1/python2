@@ -1,0 +1,10 @@
+{ 
+
+   "TEST": "sample",
+   "BRANCH": "master",
+   "res_utility_repo_isPrerelease": true,
+   "STEP_URL" : "testOverrideEnvs",
+   "LANG": "nodeJs",
+   "DISPLAY": "testV1.0"
+
+}
