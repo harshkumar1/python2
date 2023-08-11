@@ -1,25 +1,26 @@
 resources:
-  - name: script
+  - name: src_repo
     type: GitRepo
     configuration:
-      path: RjSH1/python2
-      gitProvider: myGithub
+      path: harshkumar1/pyhton2
+      gitProvider: hk_github
 pipelines:
-  - name: test_stepTestReports
+  - name: pyhton_sample
     steps:
       - name: testReport
         type: Bash
         configuration:
           inputResources:
-            - name: script
+            - name: src_repo
         execution:
           onExecute:
             - cd $res_script_resourcePath
             - ls
+            - python -V
             - python -m py_compile calc.py
             - pip install --upgrade pip
             - hash -d pip
             - pip install pytest           
             - py.test --verbose --junit-xml test-reports/results.xml test_calc.py
           onComplete:
-            - save_tests $res_script_resourcePath/test-reports/results.xml
+            - echo "completed"
