@@ -14,11 +14,10 @@ pipelines:
             - name: src_repo
         execution:
           onExecute:
-            - cd $res_script_resourcePath
             - ls
             - python -V
             - python3 -V
-            - cd $res_src_repo_resourcepath
+            - cd $res_src_repo_resourcePath
             - ls
             - python hello-world.py
           onComplete:
