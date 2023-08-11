@@ -2,7 +2,7 @@ resources:
   - name: src_repo
     type: GitRepo
     configuration:
-      path: harshkumar1/pyhton2
+      path: harshkumar1/python2
       gitProvider: hk_github_sample
 pipelines:
   - name: pyhton_sample
