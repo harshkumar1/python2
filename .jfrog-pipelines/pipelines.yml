@@ -17,6 +17,7 @@ pipelines:
             - cd $res_script_resourcePath
             - ls
             - python -V
+            - python3 -V
             - python -m py_compile calc.py
             - pip install --upgrade pip
             - hash -d pip
