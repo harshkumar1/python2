@@ -2,7 +2,7 @@ resources:
   - name: script
     type: GitRepo
     configuration:
-      path: RjSH1/python2
+      path: RjSH1/sample-script
       gitProvider: myGithub
 pipelines:
   - name: test_stepTestReports
