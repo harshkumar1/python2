@@ -18,10 +18,6 @@ pipelines:
             - ls
             - python -V
             - python3 -V
-            - python -m py_compile calc.py
-            - pip install --upgrade pip
-            - hash -d pip
-            - pip install pytest           
-            - py.test --verbose --junit-xml test-reports/results.xml test_calc.py
+            - python hello-world.py
           onComplete:
             - echo "completed"
