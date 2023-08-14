@@ -19,11 +19,6 @@ pipelines:
             - python3 -V
             - cd $res_src_repo_resourcePath
             - ls
-            - pip install --upgrade pip #You are using pip version 8.1.2, however version 23.2.1 is available. Hence needs upgrade
-            - pip --version
-            - pip install pylint
-            - pylint -version
-            - pylint .
             - python hello-world.py
           onComplete:
             - echo "completed"
